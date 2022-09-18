@@ -1,0 +1,114 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.l-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.l-modal::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  opacity: 0.7;
+  background-color: black;
+}
+
+.modal_window {
+  width: 430px;
+  height: 330px;
+  border: 1px solid black;
+  border-radius: 8px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.notification {
+  background-color: #F0F1F3;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.notification_red {
+  background-color: #FDEAE4;
+}
+
+.notification_red > img{
+  content: url("./images/red_icon.svg");
+}
+
+.notification_green {
+  background-color: #E9F8EB;
+}
+
+.notification_green > img{
+  content: url("./images/green_icon.svg");
+}
+
+.notification_yellow {
+  background-color: #FFF8E0;
+}
+
+.notification_yellow > img{
+  content: url("./images/yellow_icon.svg");
+}
+
+.notification img {
+  margin: 0 20px;
+}
+
+.text_stub {
+  font-size: 14px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.button_one {
+  background-color: #3E56AA;
+  color: white;  
+}
+
+.button_second {
+  background-color: rgba(0, 16, 61, 0.06);
+}
+
+.button_third {
+  align-self: flex-end;
+  background-color: transparent;
+  border: 0px;
+}
+
+.button_one, .button_second, .button_third {
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+}
+
